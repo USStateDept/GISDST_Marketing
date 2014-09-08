@@ -172,6 +172,7 @@ a.leaflet-control-zoom-out {
   z-index: 1004;
   margin: 15px;
   height: 55px;
+  top:50px;
 }
 
 .navbar-brand {
@@ -218,6 +219,20 @@ a.leaflet-control-zoom-out {
   cursor: pointer;
   color: #6d6e70;
 }
+
+.svgpresentation{
+  height:350px;
+  width:100%;
+
+}
+
+.results_section{
+  display:table;
+  width:100%;
+}
+
+
+
 
 
 
