@@ -263,3 +263,156 @@ a.leaflet-control-zoom-out {
   border-radius: 15px;
   font: bold 12px "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
+
+
+
+
+
+/*this is all the of the tweening */
+
+.suitimage{
+  position:relative;
+  display:inline-block;
+  height:100px;
+  width:100px;
+  background-image:url('../img/suit.png');
+  opacity:0;
+}
+
+.suit1{
+  left:100px;
+}
+
+.suit2{
+  left:300px;
+}
+
+.suit3{
+  left:500px;
+}
+
+.fixed{
+  position:fixed;
+}
+
+
+.datapiece{
+  position:relative;
+  display:inline-block;
+  height:75px;
+  width:75px;
+  opacity:0;
+  z-index:-1;
+  } 
+
+.doc_blurred{
+    background-image:url('../img/topsprite.png');
+    background-position: 0px 75px;
+}
+
+.db_blurred{
+    background-image:url('../img/topsprite.png');
+    background-position: 0px 225px;
+}
+
+.oneszeros_blurred{
+    background-image:url('../img/topsprite.png');
+    background-position: 0px 375px;
+}
+
+.doc_blurred{
+    background-image:url('../img/topsprite.png');
+    background-position: 0px 75px;
+}
+
+.db_blurred{
+    background-image:url('../img/topsprite.png');
+    background-position: 0px 225px;
+}
+
+.oneszeros_blurred{
+    background-image:url('../img/topsprite.png');
+    background-position: 0px 375px;
+}
+
+.funnelimage{
+  background-image:url('../img/funnel.png');
+  background-repeat: no-repeat;
+  height:175px;
+  width:500px;
+  margin:auto;
+  margin-top:50px;
+
+}
+
+
+.datapiece1{
+  left: 50px;
+  top: -20px;
+  z-index: -1;
+}
+.datapiece2{
+  left: 50px;
+  z-index: -1;
+  top: -7px;
+}
+.datapiece3{
+  left:50px;
+}
+.datapiece4{
+  left:150px;
+}
+.datapiece5{
+  left:150px;
+}
+.datapiece6{
+  left:300px;
+}
+.datapiece7{
+  left:300px;
+}
+.spacer{
+  height:100px;
+}
+
+
+.datacubeimage{
+  background-image: url('../img/rect6640.png');
+  background-repeat: no-repeat;
+  height: 99px;
+  width: 163px;
+  margin: auto;
+  top: -165px;
+  left: 270px;
+  position: relative;
+  z-index:-1;
+  display:inline-block;
+}
+
+.gearimage{
+  background-image: url('../img/g6978.png');
+  background-repeat: no-repeat;
+  height: 99px;
+  width: 163px;
+  margin: auto;
+  top: 0px;
+  left: -170px;
+  position: relative;
+  opacity:0;
+  z-index:0;
+  display:inline-block;
+}
+
+.cloudimage{
+  background-image: url('../img/image5537.png');
+  background-repeat: no-repeat;
+  height: 99px;
+  width: 163px;
+  margin: auto;
+  top: 0px;
+  left: 700px;
+  position: relative;
+  opacity:0;
+  z-index:0;
+  display:inline-block;
+}
