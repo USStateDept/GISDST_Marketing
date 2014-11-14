@@ -1,5 +1,5 @@
 body{
-  padding-top: 50px;
+  /*padding-top: 50px;*/
   margin: 0;
 }
 
@@ -10,9 +10,149 @@ body{
   color: #000;
 }
 
+
+
+.spashscreen{
+  padding-top:50px;
+}
+
+.spashscreen .headlogo{
+
+  margin-right:auto;
+  margin-left:auto;
+  background: url("../img/GeoLogo.png");
+  background-size: 350px 189px;
+  background-repeat: no-repeat;
+  height: 189px;
+  width:370px;
+  position:relative;
+}
+
+.spashscreen .slogan{
+  text-align: center
+}
+
+.spashscreen .subslogan{
+  padding-top:5%;
+  text-align: center
+}
+
+
+.spashscreen .ideasection{
+ cursor:pointer;
+  margin-right:auto;
+  margin-left:auto;
+
+  width:250px;
+  position:relative;
+}
+
+.spashscreen .ideasection h4{
+  width:175px;
+  display:inline-block;
+
+}
+
+.spashscreen .ideasection .lightbulb{
+  background: url("../img/lightbulbunshadowed.png");
+  background-repeat: no-repeat;
+  background-size: 233px 211px;
+  height: 160px;
+  width:70px;
+  display:inline-block;
+
+}
+.spashscreen .ideasection .lightbulb:hover{
+  background-position-x:-76px;
+  width:114px;
+}
+
+
+.container{
+  max-width: inherit;
+  margin-right:inherit;
+  margin-left:inherit;
+}
+
+
+.rowblock .sideinfo{
+  width:30%;
+  min-width:150px;
+  height:inherit;
+  display:inline-block;
+}
+
+.rowblock .animationsection{
+  width:69%;
+  min-width:200px;
+  height:inherit;
+  display:inline-block;
+
+}
+
+
+
 .navbar {
   height: 50px;
+  display:none;
 }
+.sideinfo{
+  color:white;
+  padding-left:7px;
+  vertical-align:top;
+}
+
+.sideinfo h2, .sideinfo h4, .sideinfo h5{
+  padding-top:10%;
+}
+
+.shownavbar{
+  display:block;
+}
+
+
+
+.understand-back {
+
+  background-color:#9B1762;
+
+}
+
+.understand-back .sideinfo{
+    background-color:#056839;
+}
+
+.understand-back .animationsection{
+    background: url("../img/Understand.png");
+  background-repeat: no-repeat;
+  /*background-size: 233px 211px;*/
+  /*
+  height: inherit;
+  width:inherit;
+  */
+}
+
+.structure {
+
+  background-color:#5CC4CE;
+
+}
+
+.structure .sideinfo{
+    background-color:#752329;
+}
+
+.structure .animationsection{
+    background: url("../img/Structure.png");
+  background-repeat: no-repeat;
+  /*background-size: 233px 211px;*/
+  /*
+  height: inherit;
+  width:inherit;
+  */
+}
+
+
 
 .modal-img {
   max-width: 100%;
@@ -20,6 +160,8 @@ body{
 .modal-content {
   background-color: #f5f5f5;
 }
+
+
 
 #map {
   width: 100%;
@@ -415,4 +557,8 @@ a.leaflet-control-zoom-out {
   opacity:0;
   z-index:0;
   display:inline-block;
+}
+
+.hidden{
+  display:none;
 }

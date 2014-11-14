@@ -6,24 +6,44 @@ $(document).ready(function($) {
 
 $(document).ready(function($) {
 		// build tween
-		var tween1 = TweenMax.to(".suitimage",1, {opacity: "+=1"});
+		var tween1_1 = TweenMax.to(".understand-back .sideinfo",1, {backgroundColor: "#752329"});
+		var tween1_2 = TweenMax.to(".understand-back",1, {backgroundColor: "#5CC4CE"});
 		//var tween = TweenMax.to("#animate1", 0.5, {backgroundColor: "green", scale: 2.5});
 
 		// build scene
-		var scene1 = new ScrollScene({triggerElement: "#trigger1"})
+		var scene1_1 = new ScrollScene({triggerElement: "#trigger1"})
+						.setClassToggle(".navbar", "shownavbar")
+						.setTween(tween1_1)
+						.addTo(controller);
+
+		var scene1_2 = new ScrollScene({triggerElement: "#trigger1"})
 						//.setClassToggle(".suitimage", "fixed")
-						.setTween(tween1)
+						.setTween(tween1_2)
 						.addTo(controller);
 
 
-		var tween2 = TweenMax.to(".datapiece",1, {opacity: "+=1"});
+		var tween2_1 = TweenMax.to(".structure .sideinfo",1, {backgroundColor: "#17909B"});
+		var tween2_2 = TweenMax.to(".structure",1, {backgroundColor: "#9B1762"});
 		//var tween = TweenMax.to("#animate1", 0.5, {backgroundColor: "green", scale: 2.5});
 
 		// build scene
-		var scene2 = new ScrollScene({triggerElement: "#trigger2"})
+		var scene2_1 = new ScrollScene({triggerElement: "#trigger2"})
+						.setTween(tween2_1)
+						.addTo(controller);
+
+		var scene2_2 = new ScrollScene({triggerElement: "#trigger2"})
 						//.setClassToggle(".suitimage", "fixed")
-						.setTween(tween2)
-						.addTo(controller);	
+						.setTween(tween2_2)
+						.addTo(controller);
+
+
+
+
+
+		//var tween2 = TweenMax.to(".datapiece",1, {opacity: "+=1"});
+		//var tween = TweenMax.to("#animate1", 0.5, {backgroundColor: "green", scale: 2.5});
+
+
 
 		var tween3 = TweenMax.to(".datapiece",.01, {"background-position-y": "+=75"});
 		//var tween = TweenMax.to("#animate1", 0.5, {backgroundColor: "green", scale: 2.5});
@@ -133,8 +153,8 @@ $(document).ready(function($) {
 
 
 		// show indicators (requires debug extension)
-		scene1.addIndicators();
-		scene2.addIndicators();
+		
+
 		//scene5.addIndicators();
 	});
 
