@@ -3,13 +3,28 @@ var toggleSearchType, toggleFilter, callModal;
 $( document ).ready(function() {
 
 
-    var windowHeight = $(window).height() -100;
+    $( window ).resize(function() {
+        console.log("resizing");
+        var windowHeight = $(window).height() -100;
 
-    /****
-        Adjustment of the screen and whatnot
-    *////
+         margincalc = windowHeight - 639;
+        if (margincalc > 0){
+            console.log(windowHeight - 639 );
+            console.log("margin-top:" + margincalc + "px");
+            console.log("margin-top:" + margincalc+ "px");
+            $(".affiliations").attr("style", "margin-top:" + margincalc + "px");
+        }
+        else {
+            $(".affiliations").hide();
+        }
+     
+        /****
+            Adjustment of the screen and whatnot
+        *////
 
-    $(".rowblock").height(windowHeight);
+        $(".rowblock").height(windowHeight);
+    });
+    $(window).trigger("resize");
 
 
     /****
