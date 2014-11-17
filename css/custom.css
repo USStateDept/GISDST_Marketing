@@ -153,6 +153,49 @@ body{
 }
 
 
+.build {
+
+  background-color:#9B1762;
+
+}
+
+.build .sideinfo{
+    background-color:#056839;
+}
+
+.build .animationsection{
+    background: url("../img/Build.png");
+  background-repeat: no-repeat;
+  /*background-size: 233px 211px;*/
+  /*
+  height: inherit;
+  width:inherit;
+  */
+}
+
+
+.scale {
+
+  background-color:#5CC4CE;
+
+}
+
+.scale .sideinfo{
+    background-color:#752329;
+}
+
+.scale .animationsection{
+    background: url("../img/Scale.png");
+  background-repeat: no-repeat;
+  /*background-size: 233px 211px;*/
+  /*
+  height: inherit;
+  width:inherit;
+  */
+}
+
+
+
 
 .modal-img {
   max-width: 100%;

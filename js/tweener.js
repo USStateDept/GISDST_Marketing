@@ -1,7 +1,8 @@
 var controller;
 $(document).ready(function($) {
 	// init controller
-	controller = new ScrollMagic({"offset":500});
+
+	controller = new ScrollMagic({"offset":"500px"});
 });
 
 $(document).ready(function($) {
@@ -40,29 +41,35 @@ $(document).ready(function($) {
 
 
 
-		//var tween2 = TweenMax.to(".datapiece",1, {opacity: "+=1"});
-		//var tween = TweenMax.to("#animate1", 0.5, {backgroundColor: "green", scale: 2.5});
-
-
-
-		var tween3 = TweenMax.to(".datapiece",.01, {"background-position-y": "+=75"});
+		var tween3_1 = TweenMax.to(".build .sideinfo",1, {backgroundColor: "#752329"});
+		var tween3_2 = TweenMax.to(".build",1, {backgroundColor: "#5CC4CE"});
 		//var tween = TweenMax.to("#animate1", 0.5, {backgroundColor: "green", scale: 2.5});
 
 		// build scene
-		var scene3 = new ScrollScene({triggerElement: "#trigger3"})
-						//.setClassToggle(".suitimage", "fixed")
-						.setTween(tween3)
-						.addTo(controller);	
+		var scene3_1 = new ScrollScene({triggerElement: "#trigger3"})
+						.setTween(tween3_1)
+						.addTo(controller);
 
-		var tween4 = TweenMax.to(".suitimage",1, {opacity: "-=1"});
+		var scene3_2 = new ScrollScene({triggerElement: "#trigger3"})
+						//.setClassToggle(".suitimage", "fixed")
+						.setTween(tween3_2)
+						.addTo(controller);
+
+		var tween4_1 = TweenMax.to(".scale .sideinfo",1, {backgroundColor: "#17909B"});
+		var tween4_2 = TweenMax.to(".scale",1, {backgroundColor: "#9B1762"});
 		//var tween = TweenMax.to("#animate1", 0.5, {backgroundColor: "green", scale: 2.5});
 
 		// build scene
-		var scene4 = new ScrollScene({triggerElement: "#trigger4"})
-						//.setClassToggle(".suitimage", "fixed")
-						.setTween(tween4)
-						.addTo(controller);	
+		var scene4_1 = new ScrollScene({triggerElement: "#trigger4"})
+						.setTween(tween4_1)
+						.addTo(controller);
 
+		var scene4_2 = new ScrollScene({triggerElement: "#trigger4"})
+						//.setClassToggle(".suitimage", "fixed")
+						.setTween(tween4_2)
+						.addTo(controller);
+
+/*
 
 		$(".datapiece").each(function(index, value){
 			var temptween = null;
@@ -83,79 +90,17 @@ $(document).ready(function($) {
 							//.setTween(tween53)
 							.addTo(controller);	
 		});
+*/
 
-
-		// build scene
-		var tween6 = TweenMax.to(".datacubeimage",1, {top: "+=163"});
-		var scene6 = new ScrollScene({triggerElement: "#trigger6"})
-						//.setClassToggle(".suitimage", "fixed")
-						.setTween(tween6)
-						.addTo(controller);	
-
-		var tween71 = TweenMax.to(".gearimage",2, {opacity: "+=1", left: "+=170"});
-		var scene71 = new ScrollScene({triggerElement: "#trigger7"})
-						//.setClassToggle(".suitimage", "fixed")
-						.setTween(tween71)
-						.addTo(controller);	
-
-		var tween72 = TweenMax.to(".cloudimage",2, {opacity: "+=1", left: "-=170"});
-		var scene72 = new ScrollScene({triggerElement: "#trigger7"})
-						//.setClassToggle(".suitimage", "fixed")
-						.setTween(tween72)
-						.addTo(controller);	
-
-
-/*
-		var tween51 = TweenMax.to(".datagroup1",1, {left: "+=400", top: "+=130"});
-		var tween52 = TweenMax.to(".datapiece2",1, {left: "+=400", top: "+=130"});
-		var tween53 = TweenMax.to(".datapiece3",1, {left: "+=400", top: "+=130"});
-		//var tween = TweenMax.to("#animate1", 0.5, {backgroundColor: "green", scale: 2.5});
-
-		// build scene
-		var scene5 = new ScrollScene({triggerElement: "#trigger5"})
-						//.setClassToggle(".suitimage", "fixed")
-						.setTween(tween51)
-						//.setTween(tween52)
-						//.setTween(tween53)
-						.addTo(controller);	
-
-		var scene5 = new ScrollScene({triggerElement: "#trigger5"})
-						//.setClassToggle(".suitimage", "fixed")
-						.setTween(tween52)
-						//.setTween(tween52)
-						//.setTween(tween53)
-						.addTo(controller);	
-
-
-		var scene5 = new ScrollScene({triggerElement: "#trigger5"})
-						//.setClassToggle(".suitimage", "fixed")
-						.setTween(tween53)
-						//.setTween(tween52)
-						//.setTween(tween53)
-						.addTo(controller);	
-						*/
-
-
-
-/*
-		var tween4 = TweenMax.to(".datapiece",1, {opacity: "+=1"});
-		//var tween = TweenMax.to("#animate1", 0.5, {backgroundColor: "green", scale: 2.5});
-
-		// build scene
-		var scene4 = new ScrollScene({triggerElement: "#trigger4"})
-						.setClassToggle(".suitimage", "fixed")
-						.setClassToggle(".suitimage", "fixed")
-						.setClassToggle(".suitimage", "fixed")
-						.setTween(tween4)
-						.addTo(controller);	
-						*/
 
 
 
 		// show indicators (requires debug extension)
 		
 
-		//scene5.addIndicators();
+		scene1_1.addIndicators();
+		scene2_1.addIndicators();
+		scene3_1.addIndicators();
 	});
 
 /*
