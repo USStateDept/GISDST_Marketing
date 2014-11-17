@@ -339,6 +339,21 @@ $( document ).ready(function() {
 
 
 
+
+    /***** THE MAILER  ******/
+
+
+    $(".contactform").submit(function(event){
+        //check the checker
+
+        if ($("#InputReal") != 13){
+            $(".alert-danger").show();
+            return false;
+        }
+    })
+
+
+
 });
 
 

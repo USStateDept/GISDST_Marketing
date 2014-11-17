@@ -183,10 +183,10 @@
     <div class="contactusform rowblock">
         <div class="row">
           <div class="col-md-12">
-          <div class="alert alert-success"><strong><span class="glyphicon glyphicon-send"></span> Success! Message sent. (If form ok!)</strong></div>   
-            <div class="alert alert-danger"><span class="glyphicon glyphicon-alert"></span><strong> Error! Please check the inputs. (If form error!)</strong></div>
+          <div class="alert alert-success" style="display:none"><strong><span class="glyphicon glyphicon-send"></span> Success! Message sent. (If form ok!)</strong></div>   
+            <div class="alert alert-danger" style="display:none"><span class="glyphicon glyphicon-alert"></span><strong> Error! Please check the inputs. (Make sure your math is correct)</strong></div>
           </div>
-          <form role="form" action="" method="post" >
+          <form role="form" class='contactform' action='' method="post" >
             <div class="col-lg-6">
               <div class="well well-sm"><strong><i class="glyphicon glyphicon-ok form-control-feedback"></i> Required Field</strong></div>
               <div class="form-group">
@@ -202,13 +202,19 @@
                   <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
               </div>
               <div class="form-group">
+                <label for="InputEmail">Your Organization</label>
+                <div class="input-group">
+                  <input type="organization" class="form-control" id="InputOrganization" name="InputOrganization" placeholder="Enter Organization" required  >
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+              </div>
+              <div class="form-group">
                 <label for="InputMessage">Message</label>
                 <div class="input-group">
                   <textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required></textarea>
                   <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
               </div>
               <div class="form-group">
-                <label for="InputReal">What is 4+3? (Simple Spam Checker)</label>
+                <label for="InputReal">What is 10+3? (Simple Spam Checker)</label>
                 <div class="input-group">
                   <input type="text" class="form-control" name="InputReal" id="InputReal" required>
                   <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
@@ -219,11 +225,9 @@
           <hr class="featurette-divider hidden-lg">
           <div class="col-lg-5 col-md-push-1">
             <address>
-            <h3>Office Location</h3>
-            <p class="lead"><a href="https://www.google.com/maps/preview?ie=UTF-8&q=The+Pentagon&fb=1&gl=us&hq=1400+Defense+Pentagon+Washington,+DC+20301-1400&cid=12647181945379443503&ei=qmYfU4H8LoL2oATa0IHIBg&ved=0CKwBEPwSMAo&safe=on">The Pentagon<br>
-        Washington, DC 20301</a><br>
-              Phone: XXX-XXX-XXXX<br>
-              Fax: XXX-XXX-YYYY</p>
+            <p class="lead">American Red Cross Building (SA-9)<br>
+        Washington, DC 20405<br>
+              Email: generic email address to get<br>
             </address>
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3105.2080245956886!2d-77.04574600000002!3d38.896358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1416252866403" width="600" height="450" frameborder="0" style="border:0"></iframe>
           </div>
