@@ -39,11 +39,10 @@ body{
 
 
 .spashscreen .ideasection{
- cursor:pointer;
   margin-right:auto;
   margin-left:auto;
 
-  width:250px;
+  width:400px;
   position:relative;
 }
 
@@ -60,11 +59,12 @@ body{
   height: 160px;
   width:70px;
   display:inline-block;
+  cursor:pointer;
 
 }
 .spashscreen .ideasection .lightbulb:hover{
-  background-position-x:-76px;
-  width:114px;
+  background-position-x:-63px;
+  width:132px;
 }
 
 
@@ -123,8 +123,8 @@ body{
 }
 
 .understand-back .animationsection{
-    background: url("../img/Understand.png");
-  background-repeat: no-repeat;
+    background: url("../img/Understand.png") no-repeat center;
+  /*background-repeat: no-repeat;*/
   /*background-size: 233px 211px;*/
   /*
   height: inherit;
@@ -143,8 +143,7 @@ body{
 }
 
 .structure .animationsection{
-    background: url("../img/Structure.png");
-  background-repeat: no-repeat;
+    background: url("../img/Structure.png")  no-repeat center;
   /*background-size: 233px 211px;*/
   /*
   height: inherit;
@@ -164,8 +163,8 @@ body{
 }
 
 .build .animationsection{
-    background: url("../img/Build.png");
-  background-repeat: no-repeat;
+    background: url("../img/Build.png") no-repeat center;
+
   /*background-size: 233px 211px;*/
   /*
   height: inherit;
@@ -181,12 +180,12 @@ body{
 }
 
 .scale .sideinfo{
-    background-color:#752329;
+    background-color:#17909B;
 }
 
 .scale .animationsection{
-    background: url("../img/Scale.png");
-  background-repeat: no-repeat;
+    background: url("../img/Scale2.png") no-repeat center;
+
   /*background-size: 233px 211px;*/
   /*
   height: inherit;
@@ -204,6 +203,26 @@ body{
   background-color: #f5f5f5;
 }
 
+
+
+
+.projectsearcher, div.contactus{
+  padding-left:50px;
+  padding-top:100px;
+}
+.bufferstrip{
+  height:150px;
+  background-color:#056839;
+  vertical-align:middle;
+}
+
+.bufferstrip h2{
+  text-align:center;
+  vertical-align:middle;
+  color:white;
+  margin-top:0px;
+  padding-top:65px;
+}
 
 
 #map {

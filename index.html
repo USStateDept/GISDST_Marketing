@@ -29,8 +29,10 @@
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div>
-          <a class="navbar-brand" href="../index.html">Geo Development Services Team</a>
-          <a class="navbar-brand" href="../index.html">Our data</a>
+          <a class="navbar-brand" href="#splashscreen">Geo Development Services Team</a>
+          <a class="navbar-brand ourprojects" href="#ourprojects">Projects</a>
+          <a class="navbar-brand contactus" href="#contactus">Contact Us</a>
+          <a class="navbar-brand" href="../data.html">Data</a>
         </div>
       </div>
     </div>    
@@ -55,7 +57,7 @@
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
-      <div class="container">
+      <div id="splashscreen" class="container">
       
       <div class="collaborationText spashscreen rowblock" style="height:900px;">
         <div class="headlogo">
@@ -64,7 +66,7 @@
         <h4 class="subslogan">Helping groups at the United States Department of State understand and provide structure to data through building and scaling web-based visualization applications.</h4>
 
         <div class="ideasection">
-          <h4>Have an bright idea?</h4><div class="lightbulb"></div>
+          <h4>Have an bright idea?</h4><div class="lightbulb contactus"></div>
         </div>
       </div>
 
@@ -125,37 +127,14 @@
         
       </div>
 
-      <section id="mainshow" class="mainsection">
+    <div id="searchprojects" class="bufferstrip">
+      <h2 style="text-align:center">Explore Our Work</h2>
+    </div>
 
-        <div id="suit1" class="suitimage suit1"></div>
-        <div id="suit2" class="suitimage suit2"></div>
-        <div id="suit3" class="suitimage suit3"></div>
-
-        <div>
-          <div id="datapiece1" class="datapiece doc_blurred datagroup1 datapiece1"></div>
-          <div id="datapiece2" class="datapiece db_blurred datagroup1 datapiece2"></div>
-          <div id="datapiece3" class="datapiece oneszeros_blurred datagroup1 datapiece3"></div>
-          <div id="datapiece4" class="datapiece oneszeros_blurred datagroup2 datapiece4"></div>
-          <div id="datapiece5" class="datapiece db_blurred datagroup2 datapiece5"></div>
-          <div id="datapiece6" class="datapiece doc_blurred datagroup3 datapiece6"></div>
-          <div id="datapiece7" class="datapiece oneszeros_blurred datagroup3 datapiece7"></div>
-        </div>
-        <div>
-          <div id="trigger6" class=""></div>
-          <div class="funnelimage"></div>
-        </div>
-        <div id="trigger7" class=""></div>
-        <div>
-          <div class="devgroup cloudimage"></div>
-          <div class="devgroup datacubeimage"></div>
-          <div class="devgroup gearimage"></div>
-        </div>
-        <div id="trigger8" class=""></div>
-
-
-      </section>
-
+      <section class="projectsearcher"
       <hr style="margin-bottom:0;">
+
+
 
 
       <h4>Search projects by:
@@ -191,6 +170,61 @@
               
     </div>
 
+  </section>
+
+    <div id="contactus" class="bufferstrip">
+      <h2 style="text-align:center">Contact Us</h2>
+    </div>
+
+
+    <div class="contactus rowblock">
+        <div class="row">
+          <div class="col-md-12">
+          <div class="alert alert-success"><strong><span class="glyphicon glyphicon-send"></span> Success! Message sent. (If form ok!)</strong></div>   
+            <div class="alert alert-danger"><span class="glyphicon glyphicon-alert"></span><strong> Error! Please check the inputs. (If form error!)</strong></div>
+          </div>
+          <form role="form" action="" method="post" >
+            <div class="col-lg-6">
+              <div class="well well-sm"><strong><i class="glyphicon glyphicon-ok form-control-feedback"></i> Required Field</strong></div>
+              <div class="form-group">
+                <label for="InputName">Your Name</label>
+                <div class="input-group">
+                  <input type="text" class="form-control" name="InputName" id="InputName" placeholder="Enter Name" required>
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+              </div>
+              <div class="form-group">
+                <label for="InputEmail">Your Email</label>
+                <div class="input-group">
+                  <input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Enter Email" required  >
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+              </div>
+              <div class="form-group">
+                <label for="InputMessage">Message</label>
+                <div class="input-group">
+                  <textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required></textarea>
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+              </div>
+              <div class="form-group">
+                <label for="InputReal">What is 4+3? (Simple Spam Checker)</label>
+                <div class="input-group">
+                  <input type="text" class="form-control" name="InputReal" id="InputReal" required>
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+              </div>
+              <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info pull-right">
+            </div>
+          </form>
+          <hr class="featurette-divider hidden-lg">
+          <div class="col-lg-5 col-md-push-1">
+            <address>
+            <h3>Office Location</h3>
+            <p class="lead"><a href="https://www.google.com/maps/preview?ie=UTF-8&q=The+Pentagon&fb=1&gl=us&hq=1400+Defense+Pentagon+Washington,+DC+20301-1400&cid=12647181945379443503&ei=qmYfU4H8LoL2oATa0IHIBg&ved=0CKwBEPwSMAo&safe=on">The Pentagon<br>
+        Washington, DC 20301</a><br>
+              Phone: XXX-XXX-XXXX<br>
+              Fax: XXX-XXX-YYYY</p>
+            </address>
+          </div>
+        </div>
+    </div>
    
     <hr style="margin-bottom:10px;">
     <footer>

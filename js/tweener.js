@@ -55,8 +55,8 @@ $(document).ready(function($) {
 						.setTween(tween3_2)
 						.addTo(controller);
 
-		var tween4_1 = TweenMax.to(".scale .sideinfo",1, {backgroundColor: "#17909B"});
-		var tween4_2 = TweenMax.to(".scale",1, {backgroundColor: "#9B1762"});
+		var tween4_1 = TweenMax.to(".scale .sideinfo",1, {backgroundColor: "#9B1762"});
+		var tween4_2 = TweenMax.to(".scale",1, {backgroundColor: "#752329"});
 		//var tween = TweenMax.to("#animate1", 0.5, {backgroundColor: "green", scale: 2.5});
 
 		// build scene
@@ -97,10 +97,13 @@ $(document).ready(function($) {
 
 		// show indicators (requires debug extension)
 		
-
-		scene1_1.addIndicators();
-		scene2_1.addIndicators();
-		scene3_1.addIndicators();
+		/*scrolltos*/
+		$(".contactus").click(function(ev){
+	        controller.scrollTo("#contactus");
+		});
+		$(".ourprojects").click(function(ev){
+	        controller.scrollTo("#searchprojects");
+		});
 	});
 
 /*
