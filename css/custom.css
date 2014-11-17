@@ -46,6 +46,15 @@ body{
   position:relative;
 }
 
+.splashscreen .affiliations{
+    margin-right:auto;
+  margin-left:auto;
+
+  width:400px;
+  position:relative;
+}
+}
+
 .spashscreen .ideasection h4{
   width:175px;
   display:inline-block;
@@ -361,7 +370,9 @@ a.leaflet-control-zoom-out {
 
 
 
-
+#gallery h4{
+  font-style:italic;
+}
 
 
 

@@ -1,121 +1,61 @@
 [
   {
-    "fileName":"2013-12-03_AreasTracedByDigitalVolunteers",
+    "fileName":"archesScreenShot.png",
     "map_id":"T035",
     "extent":"AMEE",
     "sector":"Application Development",
     "progress": "past",
-    "title":"Application Development Example",
-    "narrative":"This map helps illustrate the impressive effort by digital volunteers to create base map data within OpenStreetMap in response to typhoon Haiyan hitting the Philippines. By tracing buildings, roads, rivers, and other features from satellite imagery volunteers have helped build a detailed map of affected areas. The data has proven valuable for the Red Cross and other humanitarian organizations working in affected areas.",
+    "title":"Arches Cultural Heritage Tracking",
+    "narrative":"Working with ECA we built stuff",
     "productionDate":"12/3/2013"
   },
   {
-    "fileName":"2013-12-03_AreasTracedByDigitalVolunteers",
+    "fileName":"bidsScreenShot.png",
     "map_id":"T035",
     "extent":"AMEE",
     "sector":"Data Management",
     "progress": "future",
-    "title":"Data managemetn example",
-    "narrative":"This map helps illustrate the impressive effort by digital volunteers to create base map data within OpenStreetMap in response to typhoon Haiyan hitting the Philippines. By tracing buildings, roads, rivers, and other features from satellite imagery volunteers have helped build a detailed map of affected areas. The data has proven valuable for the Red Cross and other humanitarian organizations working in affected areas.",
+    "title":"BIDS example",
+    "narrative":"anddind a link <a href='http://bids.state.gov'>here </a>",
     "productionDate":"12/3/2013"
   },
   {
-    "fileName":"2013-12-03_AreasTracedByDigitalVolunteers",
+    "fileName":"dipexScreenShot.png",
     "map_id":"T035",
     "extent":"AMEE",
     "sector":"Administration",
     "progress": "past",
-    "title":"Bids examples",
+    "title":"Diplomacy Explorer",
     "narrative":"This map helps illustrate the impressive effort by digital volunteers to create base map data within OpenStreetMap in response to typhoon Haiyan hitting the Philippines. By tracing buildings, roads, rivers, and other features from satellite imagery volunteers have helped build a detailed map of affected areas. The data has proven valuable for the Red Cross and other humanitarian organizations working in affected areas.",
     "productionDate":"12/3/2013"
   },
-  {
-    "fileName":"2013-12-03_AreasTracedByDigitalVolunteers",
-    "map_id":"T035",
-    "extent":"AMEE",
-    "sector":"Development",
-    "progress": "present",
-    "title":"Haiyan Affected Areas Traced by Digital Volunteers",
-    "narrative":"This map helps illustrate the impressive effort by digital volunteers to create base map data within OpenStreetMap in response to typhoon Haiyan hitting the Philippines. By tracing buildings, roads, rivers, and other features from satellite imagery volunteers have helped build a detailed map of affected areas. The data has proven valuable for the Red Cross and other humanitarian organizations working in affected areas.",
-    "productionDate":"12/3/2013"
-  },
-  {
-    "fileName":"2013-12-03_AreasTracedByDigitalVolunteers",
+   {
+    "fileName":"archesScreenShot.png",
     "map_id":"T035",
     "extent":"AMEE",
     "sector":"Application Development",
     "progress": "past",
-    "title":"Application Development Example",
-    "narrative":"This map helps illustrate the impressive effort by digital volunteers to create base map data within OpenStreetMap in response to typhoon Haiyan hitting the Philippines. By tracing buildings, roads, rivers, and other features from satellite imagery volunteers have helped build a detailed map of affected areas. The data has proven valuable for the Red Cross and other humanitarian organizations working in affected areas.",
+    "title":"Arches Cultural Heritage Tracking",
+    "narrative":"Working with ECA we built stuff",
     "productionDate":"12/3/2013"
   },
   {
-    "fileName":"2013-12-03_AreasTracedByDigitalVolunteers",
+    "fileName":"bidsScreenShot.png",
     "map_id":"T035",
     "extent":"AMEE",
     "sector":"Data Management",
     "progress": "future",
-    "title":"Data managemetn example",
-    "narrative":"This map helps illustrate the impressive effort by digital volunteers to create base map data within OpenStreetMap in response to typhoon Haiyan hitting the Philippines. By tracing buildings, roads, rivers, and other features from satellite imagery volunteers have helped build a detailed map of affected areas. The data has proven valuable for the Red Cross and other humanitarian organizations working in affected areas.",
+    "title":"BIDS example",
+    "narrative":"anddind a link <a href='http://bids.state.gov'>here </a>",
     "productionDate":"12/3/2013"
   },
   {
-    "fileName":"2013-12-03_AreasTracedByDigitalVolunteers",
+    "fileName":"dipexScreenShot.png",
     "map_id":"T035",
     "extent":"AMEE",
     "sector":"Administration",
     "progress": "past",
-    "title":"Bids examples",
-    "narrative":"This map helps illustrate the impressive effort by digital volunteers to create base map data within OpenStreetMap in response to typhoon Haiyan hitting the Philippines. By tracing buildings, roads, rivers, and other features from satellite imagery volunteers have helped build a detailed map of affected areas. The data has proven valuable for the Red Cross and other humanitarian organizations working in affected areas.",
-    "productionDate":"12/3/2013"
-  },
-  {
-    "fileName":"2013-12-03_AreasTracedByDigitalVolunteers",
-    "map_id":"T035",
-    "extent":"AMEE",
-    "sector":"Development",
-    "progress": "present",
-    "title":"Haiyan Affected Areas Traced by Digital Volunteers",
-    "narrative":"This map helps illustrate the impressive effort by digital volunteers to create base map data within OpenStreetMap in response to typhoon Haiyan hitting the Philippines. By tracing buildings, roads, rivers, and other features from satellite imagery volunteers have helped build a detailed map of affected areas. The data has proven valuable for the Red Cross and other humanitarian organizations working in affected areas.",
-    "productionDate":"12/3/2013"
-  },
-  {
-    "fileName":"2013-12-03_AreasTracedByDigitalVolunteers",
-    "map_id":"T035",
-    "extent":"AMEE",
-    "sector":"Application Development",
-    "progress": "past",
-    "title":"Application Development Example",
-    "narrative":"This map helps illustrate the impressive effort by digital volunteers to create base map data within OpenStreetMap in response to typhoon Haiyan hitting the Philippines. By tracing buildings, roads, rivers, and other features from satellite imagery volunteers have helped build a detailed map of affected areas. The data has proven valuable for the Red Cross and other humanitarian organizations working in affected areas.",
-    "productionDate":"12/3/2013"
-  },
-  {
-    "fileName":"2013-12-03_AreasTracedByDigitalVolunteers",
-    "map_id":"T035",
-    "extent":"AMEE",
-    "sector":"Data Management",
-    "progress": "future",
-    "title":"Data managemetn example",
-    "narrative":"This map helps illustrate the impressive effort by digital volunteers to create base map data within OpenStreetMap in response to typhoon Haiyan hitting the Philippines. By tracing buildings, roads, rivers, and other features from satellite imagery volunteers have helped build a detailed map of affected areas. The data has proven valuable for the Red Cross and other humanitarian organizations working in affected areas.",
-    "productionDate":"12/3/2013"
-  },
-  {
-    "fileName":"2013-12-03_AreasTracedByDigitalVolunteers",
-    "map_id":"T035",
-    "extent":"AMEE",
-    "sector":"Administration",
-    "progress": "past",
-    "title":"Bids examples",
-    "narrative":"This map helps illustrate the impressive effort by digital volunteers to create base map data within OpenStreetMap in response to typhoon Haiyan hitting the Philippines. By tracing buildings, roads, rivers, and other features from satellite imagery volunteers have helped build a detailed map of affected areas. The data has proven valuable for the Red Cross and other humanitarian organizations working in affected areas.",
-    "productionDate":"12/3/2013"
-  },
-  {
-    "fileName":"2013-12-03_AreasTracedByDigitalVolunteers",
-    "map_id":"T035",
-    "extent":"AMEE",
-    "sector":"Development",
-    "progress": "present",
-    "title":"Haiyan Affected Areas Traced by Digital Volunteers",
+    "title":"Diplomacy Explorer",
     "narrative":"This map helps illustrate the impressive effort by digital volunteers to create base map data within OpenStreetMap in response to typhoon Haiyan hitting the Philippines. By tracing buildings, roads, rivers, and other features from satellite imagery volunteers have helped build a detailed map of affected areas. The data has proven valuable for the Red Cross and other humanitarian organizations working in affected areas.",
     "productionDate":"12/3/2013"
   }

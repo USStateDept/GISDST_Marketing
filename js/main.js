@@ -1,3 +1,5 @@
+var toggleSearchType, toggleFilter, callModal;
+
 $( document ).ready(function() {
 
 
@@ -8,9 +10,6 @@ $( document ).ready(function() {
     *////
 
     $(".rowblock").height(windowHeight);
-
-    console.log(windowHeight);
-
 
 
     /****
@@ -26,20 +25,20 @@ $( document ).ready(function() {
 
 
 
-    function callModal (item) {
+    callModal = function(item) {
         var modalDescription = $(item).find('.modalDescription').html();    
-        var mapJpg = $(item).find('img').attr("data-original").slice(0,-10) + '.jpg';
-        var pdfSrc = 'pdf/' + $(item).find('img').attr("data-original").slice(9,-10) + '.pdf'
+        var mapJpg = $(item).find('img').attr("src");
+        //var pdfSrc = 'pdf/' + $(item).find('img').attr("data-url").slice(9,-10) + '.pdf'
         var img_maxHeight = (windowHeight*0.60).toString() + "px";
         $(".modal-detailedDescription").empty();    
         $(".modal-detailedDescription").html(modalDescription); 
         $(".modal-img").css('max-height', img_maxHeight);
         $(".modal-img").attr('src', mapJpg);
-        $('#downloadPDF').attr('href', pdfSrc);
+        //$('#downloadPDF').attr('href', pdfSrc);
         $('#myModal').modal();       
     }
 
-    function toggleSearchType (item) {
+    toggleSearchType = function  (item) {
         var option = $(item).attr("id");
         switch (option) {
             case "filterSearchBtn":
@@ -79,6 +78,14 @@ $( document ).ready(function() {
     });
 
 
+    var sluggify = function(thesector){
+        return thesector.replace(" ", "-");
+    }
+    var unsluggify = function(thesector){
+        return thesector.replace("-", " ");
+    }
+
+
 
 
 
@@ -92,18 +99,17 @@ $( document ).ready(function() {
         var itemhtmlDict = {"past":"", "present": "", "future":""}
         $.each(mapData, function(index, item){ 
             
-            var itemhtml = '<div id="'+item.map_id+'" style="display:none," class="thumbnailWrap col-sm-3 ALL-EXTENT ALL-SECTOR mapped '+item.extent+' '+item.sector+'">'+
+            var itemhtml = '<div id="'+item.map_id+'" style="display:none," class="thumbnailWrap col-sm-3 ALL-EXTENT ALL-SECTOR mapped '+item.extent+' '+ sluggify(item.sector)+'">'+
                     '<div onclick="callModal(this);" class="thumbnail">'+
-                        '<img class="lazy" data-original="img/maps/'+item.fileName+'_thumb.jpg'+'" width="300" height="200" alt="" style="display:block;" >'+
+                        '<img class="lazy" data-original="img/maps/'+item.fileName+'" width="300" height="200" alt="" style="display:block;" >'+
                         '<div class="caption">'+            
                             '<h5 style="font-weight:bold;">'+item.title+'</h5>'+
                             '<p style="font-size:small; margin:6px 0 0 0;">' + formatDate(item.productionDate) +'</p>'+        
                         '</div>'+
                         '<div class="modalDescription" style="display:none;">'+                        
                             '<h4 style="font-weight:bold;">'+item.title+' <small>('+formatDate(item.productionDate)+')</small></h4>'+                        
-                            '<p style="font-size:small; margin:6px 0 0 10px;">'+item.narrative+'</p>'+
-                            '<p style="font-size:small; margin:6px 0 0 10px;"><b>Extent tags:</b> '+item.extent.replace(/\s/g, ', ')+'</p>'+                         
-                            '<p style="font-size:small; margin:6px 0 0 10px;"><b>Type tags:</b> '+item.sector.replace(/\s/g, ', ')+'</p>'+                         
+                            '<p style="font-size:small; margin:6px 0 0 10px;">'+item.narrative+'</p>'+                   
+                            '<p style="font-size:small; margin:6px 0 0 10px;"><b>Type tags:</b> '+item.sector+'</p>'+                         
                         '</div>'+   
                    '</div>'+
                 '</div>'; 
@@ -111,10 +117,11 @@ $( document ).ready(function() {
                 itemhtmlDict[item.progress] += itemhtml;
             }
          
-            var itemSectors = item.sector.match(/\S+/g);
+            var itemSectors = item.sector.match(/[^,;]+/g);
             $.each(itemSectors, function(index, sector){
-                if (sectorTags.indexOf(sector) === -1){
-                    sectorTags.push(sector);
+
+                if (sectorTags.indexOf(sluggify(sector)) === -1){
+                    sectorTags.push(sluggify(sector));
                 }
             });
         });
@@ -132,7 +139,7 @@ $( document ).ready(function() {
             html += htmlvalue + "</div>";
         });
         $('#gallery').html(html);
-        thumbnails = $("#gallery").children();
+        thumbnails = $("#gallery .results_section").children();
         generateFilterButtons();
     }
 
@@ -148,7 +155,7 @@ $( document ).ready(function() {
         var sectorFilterHtml = '<button id="ALL-SECTOR" class="btn btn-sma btn-sector filtering all" type="button" onclick="toggleFilter('+"'ALL-SECTOR'"+', this);"'+ 
             'style="margin-right:10px;">All <span class="glyphicon glyphicon-check" style="margin-left:4px;"></span></button>';
         $.each(sectorTags, function(index, tag){
-            var itemHtml = '<button id="'+tag+'" class="btn btn-sm btn-sector" type="button" onclick="toggleFilter('+"'"+tag+"'"+', this);">'+tag+
+            var itemHtml = '<button id="'+tag+'" class="btn btn-sm btn-sector" type="button" onclick="toggleFilter('+"'"+tag+"'"+', this);">'+unsluggify(tag)+
                 '<span class="glyphicon glyphicon-unchecked" style="margin-left:4px;"></span></button>';
             sectorFilterHtml += itemHtml;
         });
@@ -163,9 +170,7 @@ $( document ).ready(function() {
 
 
 
-    function toggleFilter (filter, element) {
-        console.log(filter);
-        console.log(element);
+    toggleFilter = function(filter, element) {
         // set both extent and sector to All, when no thumbnails are showing and refresh filters option is clicked
         $.each(thumbnails, function(i, thumbnail){
             $(thumbnail).removeClass("noSearchMatch").removeClass("mapped");
@@ -227,6 +232,8 @@ $( document ).ready(function() {
         }
         // check to see what sectors are active
         visibleSectors = [];
+
+        console.log(sectorButtons)
         $.each(sectorButtons, function(i, button){        
             if($(button).hasClass("filtering")){
                 var buttonid = $(button).attr("id");
