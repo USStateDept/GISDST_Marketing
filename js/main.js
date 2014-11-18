@@ -1,17 +1,13 @@
-var toggleSearchType, toggleFilter, callModal;
+var toggleSearchType, toggleFilter, callModal, windowHeight;
 
 $( document ).ready(function() {
 
 
     $( window ).resize(function() {
-        console.log("resizing");
-        var windowHeight = $(window).height() -100;
+        windowHeight = $(window).height() -100;
 
          margincalc = windowHeight - 639;
         if (margincalc > 0){
-            console.log(windowHeight - 639 );
-            console.log("margin-top:" + margincalc + "px");
-            console.log("margin-top:" + margincalc+ "px");
             $(".affiliations").attr("style", "margin-top:" + margincalc + "px");
         }
         else {
