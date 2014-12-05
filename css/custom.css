@@ -424,6 +424,13 @@ a.leaflet-control-zoom-out {
   }
 }
 
+@media (min-width: 768px){
+  .row{
+    margin-right:0px;
+    margin-left:0px;
+  }
+}
+
 .disclaimer {
   margin: 0 10px;  
   font-size: small;
