@@ -1,4 +1,12 @@
 var toggleSearchType, toggleFilter, callModal, windowHeight;
+/****
+    Should be document ready scope but failes in IE
+*////
+var sectorButtons;
+var visibleSectors = [];
+var sectorTags = [];
+var thumbnails;
+var mapData;
 
 $( document ).ready(function() {
 
@@ -21,16 +29,6 @@ $( document ).ready(function() {
         $(".rowblock").height(windowHeight);
     });
     $(window).trigger("resize");
-
-
-    /****
-        The following used by the projects section
-    *////
-    var sectorButtons;
-    var visibleSectors = [];
-    var sectorTags = [];
-    var thumbnails;
-    var mapData;
 
 
 
