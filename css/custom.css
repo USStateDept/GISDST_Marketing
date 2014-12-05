@@ -20,7 +20,7 @@ body{
 
   margin-right:auto;
   margin-left:auto;
-  background: url("../img/GeoLogo.png");
+  background: url("../img/splash_logo.png");
   background-size: 350px 189px;
   background-repeat: no-repeat;
   height: 189px;
@@ -435,11 +435,7 @@ a.leaflet-control-zoom-out {
   color: #6d6e70;
 }
 
-.svgpresentation{
-  height:350px;
-  width:100%;
 
-}
 
 .results_section{
   display:table;

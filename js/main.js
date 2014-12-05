@@ -136,7 +136,7 @@ $( document ).ready(function() {
             
             var itemhtml = '<div id="'+item.map_id+'" style="display:none," class="thumbnailWrap col-sm-3 ALL-EXTENT ALL-SECTOR mapped '+item.extent+' '+ sluggify(item.sector)+'">'+
                     '<div onclick="callModal(this);" class="thumbnail">'+
-                        '<img class="lazy" data-original="img/maps/'+item.fileName+'" width="300" height="200" alt="" style="display:block;" >'+
+                        '<img class="lazy" data-original="img/maps/'+item.fileName+'" width="300px" height="200px" alt="" style="display:block;" >'+
                         '<div class="caption">'+            
                             '<h5 style="font-weight:bold;">'+item.title+'</h5>'+
                             '<p style="font-size:small; margin:6px 0 0 0;">' + formatDate(item.productionDate) +'</p>'+        

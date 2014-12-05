@@ -1,0 +1,22 @@
+.spashscreen .subslogan{
+  padding-top:50px;
+  text-align: center
+}
+
+
+
+.sideinfo h2, .sideinfo h4, .sideinfo h5{
+  padding-top:100px;
+}
+
+
+.modal-dialog {
+  width: 500px;
+  height:750px;    
+}
+
+
+
+.navbar-fixed-top{
+	height:inherit;
+}
